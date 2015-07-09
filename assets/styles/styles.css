@@ -1,0 +1,66 @@
+.container {
+  margin:0;
+  padding:0;
+  width: 100%;
+}
+/* splash */
+.splash {
+  height:600px;
+  width:100%;
+  background-color: rgb(130, 130, 130);
+}
+.logo {
+  margin: 40px 0 30px 0;
+}
+.title {
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:7;
+  font-size: 30px;
+  margin: 0 0 20px;
+}
+
+.sub-title {
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:7;
+  font-size: 18px;
+  margin: 0 0 20px;
+}
+
+/* navbar */
+.navbar {
+  height: 50px;
+  background-color: rgb(195, 195, 195);
+  border-radius: 0;
+  margin-bottom: 0;
+  border: 0;
+
+}
+
+.navbar a {
+  text-transform:uppercase;
+  font-weight: 600;
+  padding: 0px 10px;
+  color: black;
+
+}
+
+/* content */
+.content {
+  background-color: rgb(204, 204, 204);
+  padding: 30px;
+}
+.whiteboxContainer {
+  margin: 0 auto 50px;
+  text-align: center;
+}
+.whitebox {
+  text-transform: uppercase;
+  background-color: white;
+  font-weight: 700;
+  border-radius: 2;
+  font-size: 24px;
+  margin: 0 auto;
+  padding: 15px 50px;
+}
