@@ -25,21 +25,21 @@ var jshint = require('gulp-jshint'),
 
     // Lint our scripts (NOT VENDOR)
     gulp.task('jslint', function() {
-      return gulp.src('assets/scripts/*.js')
+      return gulp.src('assets/js/*.js')
         .pipe(jshint())
         .pipe(jshint.reporter('jshint-stylish'))
     });
 
     // Compile Our Sass for development (NOT VENDOR)
     gulp.task('sass-dev', function() {
-      return gulp.src('assets/stylesheets/scss/*.scss')
+      return gulp.src('assets/styles/scss/*.scss')
         .pipe(sourcemaps.init())
         .pipe(sass({ errLogToConsole: true }).on('error', sass.logError))
         .pipe(autoprefixer({
           browser: ['last 2 versions'],
         }))
         .pipe(sourcemaps.write('/'))
-        .pipe(gulp.dest('assets/stylesheets/css'))
+        .pipe(gulp.dest('assets/styles/css/'))
     });
 
     // Sass build task
@@ -141,9 +141,9 @@ var jshint = require('gulp-jshint'),
 
     // Development Task
     gulp.task('dev', ['jslint', 'sass-dev', 'server-dev'], function() {
-      gulp.watch('assets/stylesheets/scss/*.scss', ['sass-dev'])
-      gulp.watch('assets/scripts/*.js', ['jslint', 'reload']);
-      gulp.watch('assets/stylesheets/css/*.css', ['reload']);
+      gulp.watch('assets/styles/scss/*.scss', ['sass-dev'])
+      gulp.watch('assets/js/*.js', ['jslint', 'reload']);
+      gulp.watch('assets/styles/css/*.css', ['reload']);
       gulp.watch('*.html', ['reload']);
       return gutil.log('Gulp is running your development server ...watching Javascripts and SCSS for changes.');
     });
