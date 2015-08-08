@@ -6,3 +6,19 @@
     color: white;
   }
 }
+
+.banner-contact {
+  color:white;
+  padding-top: 4px;
+  padding-bottom: 4px;
+  font-size: .8618em;
+  position: fixed;
+  width: 100%;
+  height: auto;
+  background-color: $blue;
+  z-index:100;
+  a {
+    text-decoration: underline;
+    color:white;
+  }
+}
