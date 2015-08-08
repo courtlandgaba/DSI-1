@@ -10,6 +10,9 @@
   <link rel="stylesheet" href="bower_components/font-awesome/css/font-awesome.css">
   <link rel="stylesheet" href="bower_components/animate.css/animate.css">
 
+  <!-- FONT LOAD IN -->
+  <link href='http://fonts.googleapis.com/css?family=Open+Sans:400,300,700,800' rel='stylesheet' type='text/css'>
+
   <!-- CUSTOM CSS -->
   <link rel="stylesheet" href="assets/styles/css/main.css">
 
@@ -18,29 +21,42 @@
 </head>
 <body>
 
-<div class="container">
-  <div class="splash">
-    <div class="row text-center">
-      <img src="./assets/images/logo.png" alt="DSI">
-    </div>
-    <h4 class="title text-center">maryland business equipment</h4>
-    <p class="sub-title text-center">fully managed it services and business products</p>
 
-  </div>
-
-  <div class="navbar">
-    <div class="row">
-      <div class="col-md-5 col-md-offset-1"><img src="./assets/images/logo.png" alt="Document Solutions INC."><img src="./assets/images/text.png" alt="Document Solutions INC."></div>
-      <div class="col-md-5">
-        <a href="">home</a>
-        <a href="">about us</a>
-        <a href="">solutions</a>
-        <a href="">products</a>
-        <a href="">support</a>
-        <a href="">contact us</a>
+  <header class="splash">
+    <div class="caption">
+      <div class="logo-wrapper">
+        <img src="./assets/images/logo.png" alt="DSI">
       </div>
+      <h1 class="title">maryland business equipment</h1>
+      <p class="sub-title text-center">fully managed it services and business products</p>
     </div>
-  </div>
+  </header>
+
+
+  <!-- Static navbar -->
+  <nav class="navbar navbar-default">
+    <div class="container-fluid">
+      <div class="navbar-header">
+        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+          <span class="sr-only">Toggle navigation</span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+          <span class="icon-bar"></span>
+        </button>
+        <a class="navbar-brand" href="#">Project name</a>
+      </div>
+      <div id="navbar" class="navbar-collapse collapse">
+        <ul class="nav navbar-nav navbar-right">
+          <li><a href="#">Home</a></li>
+          <li><a href="#">About us</a></li>
+          <li><a href="#">Solutions</a></li>
+          <li><a href="#">Products</a></li>
+          <li><a href="#">Support</a></li>
+          <li><a href="#">Contact Us</a></li>
+        </ul>
+      </div><!--/.nav-collapse -->
+    </div><!--/.container-fluid -->
+  </nav>
 
   <div class="content">
     <div class="whiteboxContainer">
@@ -58,9 +74,42 @@
     <div class="whiteboxContainer">
       <span class="whitebox">contact us</span>
     </div>
-
   </div>
+
 </div>
+
+<footer>
+  <div class="container">
+    <div class="row">
+      <div class="col-md-2 col-md-offset-1">
+        <h2>Site Map</h2>
+        <ul class="footer-links">
+          <li><a href="/">Home</a></li>
+          <li><a href="/about-us">About us</a></li>
+          <li><a href="/solutions">Solutions</a></li>
+          <li><a href="/products">Products</a></li>
+          <li><a href="/support">Support</a></li>
+          <li><a href="contact">Contact Us</a></li>
+        </ul>
+      </div>
+      <div class="col-md-4">
+        <h2>Contact</h2>
+
+      </div>
+      <div class="col-md-4">
+        <h2>Subscribe</h2>
+        <form>
+          <div class="form-group">
+            <input type="email" class="form-control" id="inputEmail3" placeholder="Email">
+            <button class="btn btn-primary btn-footer-subscribe">
+              <i class="fa fa-envelope"></i>
+            </button>
+          </div>
+        </form>
+      </div>
+    </div>
+  </div>
+</footer>
 
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
