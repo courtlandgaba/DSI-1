@@ -1,0 +1,12 @@
+$font-main-stack: 'Open Sans', 'Helvetica', Arial, sans-serif;
+
+body {
+  font-family: $font-main-stack;
+}
+
+.title {
+  text-transform:uppercase;
+  font-weight:700;
+  letter-spacing:7;
+  font-size: 30px;
+}
