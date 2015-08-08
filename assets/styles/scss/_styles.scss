@@ -6,6 +6,7 @@
  */
 body {
   background-color: #2B4592;
+  font-size: 15px;
 }
 
 ul {
@@ -85,6 +86,15 @@ ul {
     background-color: white;
   }
   &:before {
-    
+
   }
+}
+
+div.pattern-overlay {
+    position: absolute;
+    top: 0px;
+    left: 0px;
+    width: 100%;
+    height: 100%;
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
 }
