@@ -51,6 +51,7 @@ ul {
   text-align: center; }
 
 .whitebox {
+  display: inline-block;
   text-transform: uppercase;
   background-color: white;
   font-weight: 700;
@@ -58,7 +59,17 @@ ul {
   font-size: 24px;
   margin: 0 auto;
   padding: 15px 50px;
-  color: #263740; }
+  color: #263740;
+  min-width: 400px;
+  position: relative; }
+  .whitebox:after {
+    content: " ";
+    position: absolute;
+    height: 200px;
+    bottom: -200px;
+    left: 50%;
+    width: 4px;
+    background-color: white; }
 
 body {
   font-family: "Open Sans", "Helvetica", Arial, sans-serif; }
@@ -78,6 +89,11 @@ body {
 
 .navbar {
   margin-bottom: 0; }
+  .navbar .navbar-brand {
+    padding: 0; }
+    .navbar .navbar-brand img {
+      max-height: 40px;
+      margin-top: 6px; }
 
 .navbar-default {
   border-radius: 0; }
