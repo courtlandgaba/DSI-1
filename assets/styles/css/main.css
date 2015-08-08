@@ -304,6 +304,16 @@ footer {
   .subfooter p {
     margin: 0;
     font-size: 14px; }
+  .subfooter a {
+    color: #2B4592; }
+
+.teamitem {
+  margin-bottom: 35px; }
+  .teamitem img {
+    margin-bottom: 5px;
+    float: left;
+    display: block;
+    margin-right: 20px; }
 
 #map1, #map2, #map3, #map4 {
   height: 270px;
