@@ -110,3 +110,46 @@ ul {
   height: 122px;
   vertical-align: middle;
 }
+
+/* page body */
+
+.page-body {
+  position: relative;
+  background: #FFF;
+  p {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363f48;
+  }
+  h1 {
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #363f48;
+  }
+}
+
+.left {
+  position: relative;
+  float: left;
+  width: 66%;
+  min-height: 500px;
+  padding: 44px 30px 100px;
+  background: #FFF;
+}
+
+.right {
+  box-sizing: border-box;
+  float: left;
+  width: 34%;
+  padding: 44px 30px 100px;
+  background: #EBEBEB;
+}
+
+.sidebar-module {
+  margin-bottom: 40px;
+
+}
