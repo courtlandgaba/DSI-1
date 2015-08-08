@@ -1,8 +1,14 @@
 .navbar {
   margin-bottom: 0;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  z-index: 200;
+  -webkit-backface-visibility: hidden;
+  backface-visibility: hidden;
   .navbar-brand {
     padding: 0;
     img {
+      display: inline-block;
       max-height: 40px;
       margin-top: 6px;
     }
@@ -11,5 +17,37 @@
 
 .navbar-default {
   border-radius: 0;
+
+}
+
+.navbar-nav {
+  li {
+    text-transform: uppercase;
+    font-size: 1.218em;
+    font-weight: 600;
+    a {
+      position: relative;
+      &:hover {
+        &:after {
+          position: absolute;
+          bottom: -2px;
+          left: 0px;
+          width: 100%;
+          height: 2px;
+          background-color: black;
+        }
+      }
+    }
+  }
+}
+
+#navbar-fixed.affix {
+    position: fixed;
+    top: 26px;
+    width: 100%
+}
+
+.navbar-default .navbar-nav > li > a {
+  color: black;
 
 }
