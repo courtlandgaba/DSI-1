@@ -72,6 +72,64 @@ ul {
     width: 4px;
     background-color: white; }
 
+<<<<<<< HEAD
+/* page title */
+.pageTitle {
+  height: 122px;
+  width: 100%;
+  background-color: #2B4592;
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==); }
+
+.heading {
+  display: block;
+  text-transform: uppercase;
+  letter-spacing: 8px;
+  font-size: 50px;
+  line-height: 50px;
+  font-weight: 700;
+  color: #FFF; }
+
+.table-cell {
+  display: table-cell;
+  height: 122px;
+  vertical-align: middle; }
+
+/* page body */
+.page-body {
+  position: relative;
+  background: #FFF; }
+  .page-body p {
+    margin-bottom: 35px;
+    font-size: 16px;
+    line-height: 24px;
+    color: #363f48; }
+  .page-body h1 {
+    margin-bottom: 32px;
+    text-transform: uppercase;
+    font-size: 30px;
+    line-height: 30px;
+    font-weight: 700;
+    color: #363f48; }
+
+.left {
+  position: relative;
+  float: left;
+  width: 66%;
+  min-height: 500px;
+  padding: 44px 30px 100px;
+  background: #FFF; }
+
+.right {
+  box-sizing: border-box;
+  float: left;
+  width: 34%;
+  padding: 44px 30px 100px;
+  background: #EBEBEB; }
+
+.sidebar-module {
+  margin-bottom: 40px; }
+
+=======
 div.pattern-overlay {
   position: absolute;
   top: 0px;
@@ -80,6 +138,7 @@ div.pattern-overlay {
   height: 100%;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==); }
 
+>>>>>>> fd7b99f02ec3cc3625d99e76b4e7873103185df1
 body {
   font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 15px; }
