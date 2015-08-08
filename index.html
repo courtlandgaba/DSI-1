@@ -35,62 +35,91 @@
 
   <header class="splash">
     <div class="caption">
-      <div class="logo-wrapper">
+      <div class="logo-wrapper animated fadeIn wow">
         <img src="./assets/images/logo.png" alt="DSI">
       </div>
-      <h1 class="title">document solutions inc.</h1>
-      <p class="sub-title text-center">fully managed it services and business products</p>
+      <h1 class="title animated slideInUp wow">document solutions inc.</h1>
+      <h2 class="sub-title text-center animated slideInUp wow" data-wow-delay=".1s">fully managed it services and business products</p>
     </div>
   </header>
 
 
   <!-- Static navbar -->
-  <nav class="navbar navbar-default" id="navbar-fixed">
-    <div class="container-fluid">
-      <div class="navbar-header">
-        <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
-          <span class="sr-only">Toggle navigation</span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-          <span class="icon-bar"></span>
-        </button>
-        <a class="navbar-brand" href="#">
-          <img src="assets/images/logo.png" alt="">
-          <img src="assets/images/text.png" alt="">
-        </a>
-      </div>
-      <div id="navbar" class="navbar-collapse collapse">
-        <ul class="nav navbar-nav navbar-right">
-          <li><a href="index.html">Home</a></li>
-          <li><a href="about.html">About us</a></li>
-          <li><a href="customer.html">Customer Testimonials</a></li>
-          <li><a href="proucts.html">Products</a></li>
-          <li><a href="support.html">Support</a></li>
-          <li><a href="contact.html">Contact Us</a></li>
-        </ul>
-      </div><!--/.nav-collapse -->
-    </div><!--/.container-fluid -->
-  </nav>
+  <div class="nav-wrapper">
+    <nav class="navbar navbar-default" id="navbar-fixed">
+      <div class="container">
+        <div class="navbar-header">
+          <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#navbar" aria-expanded="false" aria-controls="navbar">
+            <span class="sr-only">Toggle navigation</span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+            <span class="icon-bar"></span>
+          </button>
+          <a class="navbar-brand" href="#">
+            <img src="assets/images/logo.png" alt="">
+            <img src="assets/images/text.png" alt="">
+          </a>
+        </div>
+        <div id="navbar" class="navbar-collapse collapse">
+          <ul class="nav navbar-nav navbar-right">
+            <li><a href="index.html">Home</a></li>
+            <li><a href="about">ABOUT US</a></li>
+            <li><a href="customer.html">Customer Testimonials</a></li>
+            <li><a href="products.html">Products</a></li>
+            <li><a href="support.html">Support</a></li>
+            <li><a href="contact.html">Contact Us</a></li>
+          </ul>
+        </div><!--/.nav-collapse -->
+      </div><!--/.container-fluid -->
+    </nav>
+  </div>
 
   <div class="content">
 
-    <div class="patter-overlay"></div>
+    <div class="section section-story">
+      <div class="whiteboxContainer">
+        <h3 class="whitebox whitebox-line-bottom animated flipInX wow">our story</h3>
+      </div>
+      <div class="row">
+        <div class="col-sm-offset-2 col-sm-8">
+          <div class="panel panel-default panel-dsihome">
+            <div class="panel-body">
+              <p class="h3">Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+            </div>
+            <div class="down-button-wrapper">
+              <div class="down-button">
+                <i class="fa fa-chevron-down"></i>
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
 
-    <div class="whiteboxContainer">
-      <span class="whitebox">our story</span>
+    <div class="section section-solutions">
+      <div class="whiteboxContainer">
+        <h3 class="whitebox whitebox-line-top animated flipInX wow">our solutions</h3>
+      </div>
     </div>
-    <div class="whiteboxContainer">
-      <span class="whitebox">our solutions</span>
+
+    <div class="section section-advantages">
+      <div class="whiteboxContainer">
+        <span class="whitebox">our advantages</span>
+      </div>
     </div>
-    <div class="whiteboxContainer">
-      <span class="whitebox">our advantages</span>
+
+    <div class="section section-partners">
+      <div class="whiteboxContainer">
+        <span class="whitebox">our partners</span>
+      </div>
     </div>
-    <div class="whiteboxContainer">
-      <span class="whitebox">our partners</span>
+
+    <div class="section section-contact">
+      <div class="whiteboxContainer">
+        <span class="whitebox">contact us</span>
+      </div>
     </div>
-    <div class="whiteboxContainer">
-      <span class="whitebox">contact us</span>
-    </div>
+
   </div>
 
 </div>
@@ -123,6 +152,7 @@
 
 <script src="bower_components/jquery/dist/jquery.js"></script>
 <script src="bower_components/bootstrap/dist/js/bootstrap.js"></script>
+<script src="bower_components/wow.js/dist/wow.js"></script>
 <script src="assets/js/main.js"></script>
 </body>
 </html>
