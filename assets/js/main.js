@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   var navbarOffset = $('#navbar-fixed').offset().top;
 
+  // Use bootstrap's 'affix' plugin to pin the navbar
   $('#navbar-fixed').affix({
     offset: {
       top: navbarOffset - 30,
@@ -10,6 +11,8 @@ $(document).ready(function() {
     }
   });
 
+
+  // WOW.js configuration
   var wow = new WOW(
     {
       boxClass:     'wow',      // animated element css class (default is wow)
@@ -24,6 +27,11 @@ $(document).ready(function() {
     }
   );
 
+  // Initialize wow.js for animations on scrolls
   wow.init();
+
+  // Initialize bootstrap tooltips
+  $('[data-toggle="tooltip"]').tooltip()
+
 
 });
