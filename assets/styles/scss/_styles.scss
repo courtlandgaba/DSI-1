@@ -8,6 +8,16 @@ body {
   background-color: #2B4592;
 }
 
+#background {
+    position: fixed;
+    top: 0px;
+    left: 0px;
+    width: 50%;
+    height: 100%;
+    background-color: #3D5CB9;
+    z-index: -1;
+}
+
 ul {
   padding: 0px;
   margin: 0px;
