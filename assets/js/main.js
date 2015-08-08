@@ -10,8 +10,6 @@ $(document).ready(function() {
       bottom: 0
     }
   });
-<<<<<<< HEAD
-
 
   // WOW.js configuration
   var wow = new WOW(
@@ -33,8 +31,4 @@ $(document).ready(function() {
 
   // Initialize bootstrap tooltips
   $('[data-toggle="tooltip"]').tooltip()
-
-
-=======
->>>>>>> 4daa5bc9cc7b190b94422b6a4cb24022da01f225
 });
