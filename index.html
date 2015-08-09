@@ -2,7 +2,7 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0, maximum-scale=1.0, user-scalable=no" />
 
   <!-- VENDOR CSS -->
   <link rel="stylesheet" href="bower_components/bootstrap/dist/css/bootstrap.css">
@@ -20,7 +20,6 @@
 
 </head>
 <body>
-  <div id="background"></div>
   <div class="banner-contact">
     <div class="container clearfix">
       <span class="pull-left">
@@ -32,7 +31,7 @@
     </div>
   </div>
 
-  <header class="splash">
+  <header class="splash" id="header">
     <div class="caption">
       <div class="logo-wrapper animated fadeIn wow">
         <img src="./assets/images/logo.png" alt="DSI">
@@ -42,7 +41,7 @@
 
     </div>
     <div class="header-btn-wrapper">
-      <div class="header-btn animated fadeInUp">
+      <div class="header-btn animated fadeInUp"  data-scroll-target="story">
         <a href="" class="btn-cta btn-arrow-down white-line-bottom">Discover the DSI Difference<br />
         </a>
       </div>
@@ -66,7 +65,7 @@
             <span class="icon-bar"></span>
             <span class="icon-bar"></span>
           </button>
-          <a class="navbar-brand" href="#">
+          <a class="navbar-brand" href="/">
             <img src="assets/images/logo.png" alt="">
             <img src="assets/images/text.png" alt="">
           </a>
@@ -84,83 +83,199 @@
     </nav>
   </div>
 
-  <div class="content content-blue">
+  <div class="content">
 
-    <div class="right-side">
+    <div class="content-blue">
 
-    </div>
+    <div class="right-side"></div>
 
-    <div class="section section-story" id="story">
-      <div class="whiteboxContainer">
-        <h3 class="whitebox whitebox-line-top whitebox-line-bottom animated flipInX wow" data-wow-offset="300">our story</h3>
-      </div>
-      <div class="row">
-        <div class="col-sm-offset-2 col-sm-8">
-          <div class="panel panel-default panel-dsihome animated fadeInDown wow" data-wow-offset="200" data-wow-delay=".7s">
-            <div class="panel-body">
-              <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
-            </div>
-            <div class="down-button-wrapper">
-              <div class="down-button" data-scroll-target="solutions">
-                <i class="fa fa-chevron-down"></i>
+      <div class="section section-story" id="story">
+        <div class="whiteboxContainer">
+          <h3 class="whitebox whitebox-line-top whitebox-line-bottom animated flipInX wow" data-wow-offset="300">our story</h3>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-2 col-sm-8">
+            <div class="panel panel-default panel-dsihome animated fadeInDown wow" data-wow-offset="200" data-wow-delay=".7s">
+              <div class="panel-body">
+                <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+                <p>Typi non habent claritatem insitam; est usus legentis in iis qui facit eorum claritatem. Investigationes demonstraverunt lectores legere me lius quod ii legunt saepius. Claritas est etiam processus dynamicus, qui sequitur mutationem consuetudium lectorum. Mirum est notare quam littera gothica, quam nunc putamus parum claram, anteposuerit litterarum formas humanitatis per seacula quarta decima et quinta decima. Eodem modo typi, qui nunc nobis videntur parum clari, fiant sollemnes in futurum.</p>
+              </div>
+              <div class="down-button-wrapper">
+                <div class="down-button" data-scroll-target="solutions">
+                  <i class="fa fa-chevron-down"></i>
+                </div>
               </div>
             </div>
           </div>
         </div>
       </div>
-    </div>
 
-    <div class="section section-solutions" id="solutions">
-      <div class="whiteboxContainer">
-        <h3 class="whitebox whitebox-line-top animated flipInX wow" data-wow-offset="200">our solutions</h3>
-        <div class="solutions-list animated fadeInDown wow" data-wow-offset="200" data-wow-delay=".7s">
-          <div class="row">
-            <div class="col-sm-offset-2 col-sm-4">
-              <h4>Business <br/><span class="text-underline text-bolder">Equipment</span></h4>
-              <ul class="solutions-list">
-                <li><i class="fa fa-fw fa-print"></i><a href="products.html">Copiers/Multi Function Printers</a></li>
-                <li><i class="fa fa-fw fa-desktop"></i><a href="products.html">Interactive White Boards</a></li>
-                <li><i class="fa fa-fw fa-copy"></i><a href="products.html">Document Management & Scanning</a></li>
-                <li><i class="fa fa-fw fa-graduation-cap"></i><a href="products.html">Authorized Dealer Training</a></li>
-                <li><i class="fa fa-fw fa-phone"></i><a href="products.html">Expert Technicians & Support</a></li>
-              </ul>
-            </div>
-            <div class="col-sm-offset-1 col-sm-4">
-              <h4>Business <br/><span class="text-underline text-bolder">Equipment</span></h4>
-              <ul class="solutions-list">
-                <li><i class="fa fa-fw fa-print"></i><a href="products.html">Copiers/Multi Function Printers</a></li>
-                <li><i class="fa fa-fw fa-desktop"></i><a href="products.html">Interactive White Boards</a></li>
-                <li><i class="fa fa-fw fa-copy"></i><a href="products.html">Document Management & Scanning</a></li>
-                <li><i class="fa fa-fw fa-graduation-cap"></i><a href="products.html">Authorized Dealer Training</a></li>
-                <li><i class="fa fa-fw fa-phone"></i><a href="products.html">Expert Technicians & Support</a></li>
-              </ul>
+      <div class="section section-solutions" id="solutions">
+        <div class="whiteboxContainer">
+          <h3 class="whitebox whitebox-line-top animated flipInX wow" data-wow-offset="200">our solutions</h3>
+          <div class="solutions-list animated fadeInDown wow" data-wow-offset="200" data-wow-delay=".7s">
+            <div class="row">
+              <div class="col-sm-offset-2 col-sm-4">
+                <h4>Business <br/><span class="text-underline text-bolder">Equipment</span></h4>
+                <ul class="solutions-list">
+                  <li><i class="fa fa-fw fa-print"></i><a href="products.html">Copiers/Multi Function Printers</a></li>
+                  <li><i class="fa fa-fw fa-desktop"></i><a href="products.html">Interactive White Boards</a></li>
+                  <li><i class="fa fa-fw fa-copy"></i><a href="products.html">Document Management & Scanning</a></li>
+                  <li><i class="fa fa-fw fa-graduation-cap"></i><a href="products.html">Authorized Dealer Training</a></li>
+                  <li><i class="fa fa-fw fa-phone"></i><a href="products.html">Expert Technicians & Support</a></li>
+                </ul>
+              </div>
+              <div class="col-sm-offset-1 col-sm-4">
+                <h4>Business <br/><span class="text-underline text-bolder">Equipment</span></h4>
+                <ul class="solutions-list">
+                  <li><i class="fa fa-fw fa-print"></i><a href="products.html">Copiers/Multi Function Printers</a></li>
+                  <li><i class="fa fa-fw fa-desktop"></i><a href="products.html">Interactive White Boards</a></li>
+                  <li><i class="fa fa-fw fa-copy"></i><a href="products.html">Document Management & Scanning</a></li>
+                  <li><i class="fa fa-fw fa-graduation-cap"></i><a href="products.html">Authorized Dealer Training</a></li>
+                  <li><i class="fa fa-fw fa-phone"></i><a href="products.html">Expert Technicians & Support</a></li>
+                </ul>
+              </div>
             </div>
           </div>
         </div>
+        <div class="down-button-wrapper animated fadeIn wow" data-wow-delay=".5s">
+          <div class="down-button" data-scroll-target="advantages">
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </div>
       </div>
+
+    </div> <!-- END BLUE CONTENT -->
+
+    <div class="content content-gray">
+      <div class="right-side"></div>
+      <div class="section section-advantages" id="advantages">
+        <div class="whiteboxContainer">
+          <span class="whitebox whitebox-line-top whitebox-line-bottom animated flipInX wow" data-wow-offset="200">our advantages</span>
+        </div>
+        <div class="big-icon-wrapper">
+          <div class="horizontal-white-line"></div>
+          <i class="fa fa-3x fa-print"></i>
+        </div>
+        <div class="down-button-wrapper animated fadeIn wow" data-wow-delay=".5s">
+          <div class="down-button" data-scroll-target="partners">
+            <i class="fa fa-chevron-down"></i>
+          </div>
+        </div>
+      </div>
+
     </div>
 
-    <div class="section section-advantages" id="advantages">
-      <div class="whiteboxContainer">
-        <span class="whitebox animated flipInX wow" data-wow-offset="200">our advantages</span>
-      </div>
-    </div>
-
+  <div class="content-partners">
     <div class="section section-partners" id="partners">
       <div class="whiteboxContainer">
-        <span class="whitebox animated flipInX wow" data-wow-offset="200">our partners</span>
+        <span class="whitebox whitebox-line-top animated flipInX wow" data-wow-offset="200">our partners</span>
       </div>
     </div>
-
-    <div class="section section-contact" id="contact">
-      <div class="whiteboxContainer">
-        <span class="whitebox animated flipInX wow" data-wow-offset="200">contact us</span>
+    <div class="down-button-wrapper animated fadeIn wow" data-wow-delay=".5s">
+      <div class="down-button" data-scroll-target="contact">
+        <i class="fa fa-chevron-down"></i>
       </div>
     </div>
-
   </div>
 
-</div>
+
+
+    <div class="content-blue">
+
+      <div class="section section-contact" id="contact">
+        <div class="whiteboxContainer">
+          <span class="whitebox whitebox-line-top whitebox-line-bottom animated flipInX wow" data-wow-offset="200">contact us</span>
+        </div>
+        <div class="big-icon-wrapper animated fadeIn wow">
+          <i class="fa fa-3x fa-envelope"></i>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-6">
+            <div class="panel panel-default panel-dsihome panel-contact whitebox-line-bottom animated fadeInDown wow" data-wow-offset="200" data-wow-delay=".4s">
+              <div class="panel-body">
+
+                <div class="row row-address">
+                  <div class="col-sm-6">
+                    <p><span class="text-bolder">Email: </span><a href="mailto:info@DSI.com">info@DSI.com</a></p>
+                  </div>
+                  <div class="col-sm-6">
+                    <p><span class="text-bolder">Toll Free: </span> <a href="tel:555-555-5555">(555)-555-5555</a></p>
+                  </div>
+                </div>
+
+                <div class="row row-address">
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                </div>
+
+                <div class="row row-address">
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                </div>
+
+                <form action="/contact-form-home.php">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                       <label for="nameInput">Name</label>
+                       <input type="name" class="form-control" id="nameInput" placeholder="Enter your full name please">
+                     </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                       <label for="exampleInputEmail1">Email address</label>
+                       <input type="email" class="form-control" id="emailInput" placeholder="youadress@yourdomain.com">
+                     </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <textarea class="form-control" rows="3" placeholder="What can we do for you?"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-offset-4 col-sm-4">
+                      <button type="submit" value="send" class="btn btn-lg btn-block btn-primary btn-contact-form-submit" name="submit">
+                        <i class="fa fa-envelope"></i> Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="big-icon-wrapper to-top-wrapper animated fadeIn wow" data-wow-delay=".2s">
+          <div class="down-button" data-scroll-target="header">
+            <i class="fa fa-3x fa-chevron-up"></i>
+          </div>
+        </div>
+      </div>
+    </div> <!--END BLUE CONTENT-->
+
+  </div>
 
 <footer>
   <div class="container">
