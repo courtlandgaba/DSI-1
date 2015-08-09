@@ -1,6 +1,7 @@
 $(document).ready(function() {
   'use strict';
 
+  // Get navbar offset from top window to calculate when to affix the navbar to the top
   var navbarOffset = $('#navbar-fixed').offset().top;
 
   // Use bootstrap's 'affix' plugin to pin the navbar
@@ -29,8 +30,8 @@ $(document).ready(function() {
   // Initialize wow.js for animations on scrolls
   wow.init();
 
-  // // Initialize bootstrap tooltips
-  // $('[data-toggle="tooltip"]').tooltip();
+  // Initialize bootstrap tooltips
+  $('[data-toggle="tooltip"]').tooltip();
 
   $('body').on('click', '[data-scroll-target]', function(e){
     e.preventDefault();
@@ -46,5 +47,7 @@ $(document).ready(function() {
     $(window).on('scroll', function(e) {
 
     });
+
+
 
 });
