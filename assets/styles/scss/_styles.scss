@@ -214,3 +214,12 @@ ul {
   -moz-border-radius: 3px;
   border-radius: 3px;
 }
+
+.bg-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  background: #EBEBEB;
+}

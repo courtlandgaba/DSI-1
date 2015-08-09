@@ -171,6 +171,14 @@ ul {
   border-style: solid;
   border-radius: 3px; }
 
+.bg-right {
+  position: absolute;
+  right: 0px;
+  top: 0px;
+  width: 50%;
+  height: 100%;
+  background: #EBEBEB; }
+
 body {
   font-family: "Open Sans", "Helvetica", Arial, sans-serif;
   font-size: 15px; }
@@ -571,5 +579,82 @@ footer {
   height: 270px;
   width: 60%;
   float: right; }
+
+ul.supply-nav {
+  margin: 0px 0px 90px 0px;
+  padding: 0px; }
+  ul.supply-nav li {
+    list-style: none;
+    float: left;
+    display: block;
+    padding: 3px 15px;
+    border-right-color: #363f48;
+    border-right-width: 1px;
+    border-right-style: solid;
+    margin-bottom: 5px;
+    font-size: 16px;
+    line-height: 24px; }
+    ul.supply-nav li a {
+      color: #363f48;
+      font-weight: 700; }
+
+li.active a {
+  color: #2B4592 !important; }
+
+.first {
+  padding: 3px 15px 3px 0px !important; }
+
+.firstt {
+  margin-right: 4% !important; }
+
+.last {
+  padding: 3px 0px 3px 15px !important;
+  border-right: none !important; }
+
+.lastt {
+  margin-right: 0px !important; }
+
+form {
+  margin: 0; }
+  form .half {
+    float: left;
+    width: 48%; }
+  form .first {
+    margin-right: 4%; }
+  form .third {
+    float: left;
+    width: 30.6666%;
+    margin-right: 4%; }
+  form label {
+    display: block;
+    margin-bottom: 20px;
+    font-size: 16px;
+    line-height: 16px;
+    font-weight: 700;
+    color: #000; }
+    form label span {
+      color: #ff0000; }
+  form input[type="text"] {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 12px 10px;
+    font-size: 16px;
+    color: #363f48;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3); }
+  form textarea {
+    outline: none;
+    display: block;
+    width: 100%;
+    margin-bottom: 40px;
+    padding: 12px 10px;
+    font-size: 16px;
+    color: #363f48;
+    border: 1px solid #BBB;
+    border-radius: 3px;
+    box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3); }
 
 /*# sourceMappingURL=/main.css.map */
