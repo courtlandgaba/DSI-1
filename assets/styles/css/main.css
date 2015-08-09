@@ -39,8 +39,10 @@ ul {
 
 /* content */
 .content {
+  position: relative;
   background-color: #2B4592;
   padding: 30px;
+  padding-top: 0px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==); }
 
 .whiteboxContainer {
@@ -63,7 +65,7 @@ ul {
   .whitebox:first-child {
     margin-top: 60px; }
 
-.whitebox-line-bottom:after {
+.whitebox-line-bottom:before {
   content: " ";
   position: absolute;
   height: 200px;
@@ -379,6 +381,17 @@ p {
             transform-origin: top;
     -webkit-transition: -webkit-transform 0.3s ease-out;
             transition: transform 0.3s ease-out; }
+
+.right-side {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%; }
+
+.content-blue .right-side {
+  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
+  background-color: #29418a; }
 
 .navbar {
   margin-bottom: 0;
