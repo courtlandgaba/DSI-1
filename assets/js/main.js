@@ -3,6 +3,7 @@ $(document).ready(function() {
 
   var navbarOffset = $('#navbar-fixed').offset().top;
 
+
   // Use bootstrap's 'affix' plugin to pin the navbar
   $('#navbar-fixed').affix({
     offset: {
