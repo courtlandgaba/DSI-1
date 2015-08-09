@@ -71,6 +71,14 @@
     a {
       display: block;
       text-decoration: none;
+      &:hover {
+        &:visited {
+          color: $blue;
+        }
+      }
+      &:visited{
+        color:$white;
+      }
     }
     i {
       position:absolute;
@@ -105,8 +113,6 @@
     left:49.5%;
     width: 3px;
     background-color: white;
-/*     transform: scaleY(0);
- */    transform-origin: top;
     transition: transform .3s ease-out;
   }
 }
