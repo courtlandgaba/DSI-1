@@ -59,8 +59,8 @@ ul {
 }
 .whiteboxContainer {
   margin: 0 auto 50px;
-  margin-top: 50px;
   text-align: center;
+  padding-top: 50px;
 }
 .whitebox {
   display: inline-block;
@@ -157,13 +157,6 @@ ul {
     }
 
   }
-}
-
-.right-side {
-  width: 50%;
-  margin-left: 50%;
-  height: 100%;
-  background-color: black;
 }
 
 /* page title */
@@ -316,4 +309,21 @@ ul {
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
+}
+
+.right-side {
+  position: absolute;
+  top: 0px;
+  right: 0px;
+  width: 50%;
+  height: 100%;
+}
+
+
+
+.content-blue {
+  .right-side {
+    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
+    background-color: darken($blue, 1%);
+  }
 }
