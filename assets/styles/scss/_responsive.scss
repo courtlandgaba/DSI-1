@@ -1,0 +1,13 @@
+@media screen and (max-width: 876px){
+  .horizontal-white-line {
+    display:none;
+  }
+  .col-advantage {
+    width: 60%;
+    margin: 0 auto;
+    margin-top: 60px;
+    &:first-child {
+      margin-top: 40px;
+    }
+  }
+};
