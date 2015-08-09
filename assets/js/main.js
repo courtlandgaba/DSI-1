@@ -29,6 +29,15 @@ $(document).ready(function() {
   // Initialize wow.js for animations on scrolls
   wow.init();
 
-  // Initialize bootstrap tooltips
-  $('[data-toggle="tooltip"]').tooltip()
+  // // Initialize bootstrap tooltips
+  // $('[data-toggle="tooltip"]').tooltip();
+
+  $('body').on('click', '[data-scroll-target]', function(e){
+    e.preventDefault();
+    var target = $(this).attr('data-scroll-target');
+    $('html, body').animate({
+      scrollTop: ($('#'+target).offset().top - 60
+    )}, 800);
+  });
+
 });

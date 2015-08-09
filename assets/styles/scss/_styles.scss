@@ -51,8 +51,10 @@ ul {
 
 /* content */
 .content {
+  position:relative;
   background-color: #2B4592;
   padding: 30px;
+  padding-top: 0px;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
 }
 .whiteboxContainer {
@@ -81,13 +83,13 @@ ul {
 }
 
 .whitebox-line-bottom {
-  &:after {
+  &:before {
     content: " ";
     position: absolute;
     height:200px;
     bottom:-180px;
-    left:50%;
-    width:4px;
+    left:49.5%;
+    width:3px;
     background-color: white;
   }
 }
@@ -99,7 +101,7 @@ ul {
     height:120px;
     top:-112px;
     left:49.5%;
-    width:4px;
+    width:3px;
     background-color: white;
   }
 }
@@ -107,31 +109,31 @@ ul {
 .panel-dsihome {
   position: relative;
   padding: 40px;
-  .down-button-wrapper {
-    position: absolute;
-    bottom: -20px;
-    left: 0;
-    width: 100%;
-    text-align: center;
-    .down-button {
-      cursor: pointer;
-      position: relative;
-      display:inline-block;
-      color:white;
-      background-color: $blue;
-      width: 40px;
-      height: 40px;
-      border: 4px solid $white;
-      border-radius: 50%;
-      font-size: 1.5em;
-      transition: all .3s ease-out;
-      &:hover {
-        background-color: lighten($blue, 20%);
-      }
+}
+
+.down-button-wrapper {
+  position: absolute;
+  bottom: -20px;
+  left: 0;
+  width: 100%;
+  text-align: center;
+  .down-button {
+    cursor: pointer;
+    position: relative;
+    display:inline-block;
+    color:white;
+    background-color: $blue;
+    width: 40px;
+    height: 40px;
+    border: 4px solid $white;
+    border-radius: 50%;
+    font-size: 1.5em;
+    transition: all .3s ease-out;
+    &:hover {
+      background-color: lighten($blue, 20%);
     }
   }
 }
-
 .section-solutions {
   .solutions-list {
     margin-top: 20px;
