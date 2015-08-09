@@ -30,5 +30,5 @@ $(document).ready(function() {
   wow.init();
 
   // Initialize bootstrap tooltips
-  $('[data-toggle="tooltip"]').tooltip()
+  $('[data-toggle="tooltip"]').tooltip();
 });
