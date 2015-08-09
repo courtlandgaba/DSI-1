@@ -31,7 +31,7 @@
     </div>
   </div>
 
-  <header class="splash">
+  <header class="splash" id="header">
     <div class="caption">
       <div class="logo-wrapper animated fadeIn wow">
         <img src="./assets/images/logo.png" alt="DSI">
@@ -187,8 +187,90 @@
         <div class="whiteboxContainer">
           <span class="whitebox whitebox-line-top whitebox-line-bottom animated flipInX wow" data-wow-offset="200">contact us</span>
         </div>
-        <div class="big-icon-wrapper">
+        <div class="big-icon-wrapper animated fadeIn wow">
           <i class="fa fa-3x fa-envelope"></i>
+        </div>
+        <div class="row">
+          <div class="col-sm-offset-3 col-sm-6">
+            <div class="panel panel-default panel-dsihome panel-contact whitebox-line-bottom animated fadeInDown wow" data-wow-offset="200" data-wow-delay=".4s">
+              <div class="panel-body">
+
+                <div class="row row-address">
+                  <div class="col-sm-6">
+                    <p><span class="text-bolder">Email: </span><a href="mailto:info@DSI.com">info@DSI.com</a></p>
+                  </div>
+                  <div class="col-sm-6">
+                    <p><span class="text-bolder">Toll Free: </span> <a href="tel:555-555-5555">(555)-555-5555</a></p>
+                  </div>
+                </div>
+
+                <div class="row row-address">
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                </div>
+
+                <div class="row row-address">
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                  <div class="col-sm-6">
+                    <span class="address-line text-bolder text-uppercase">Columbia Office</span>
+                    <span class="address-line">5123 Bush River Road</span>
+                    <span class="address-line">Columbia, SC 29212</span>
+                    <span class="address-line"><a href="tel:555-555-1111">(555)-555-1111</a></span>
+                  </div>
+                </div>
+
+                <form action="/contact-form-home.php">
+                  <div class="row">
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                       <label for="nameInput">Name</label>
+                       <input type="name" class="form-control" id="nameInput" placeholder="Enter your full name please">
+                     </div>
+                    </div>
+                    <div class="col-sm-6">
+                      <div class="form-group">
+                       <label for="exampleInputEmail1">Email address</label>
+                       <input type="email" class="form-control" id="emailInput" placeholder="youadress@yourdomain.com">
+                     </div>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-12">
+                      <textarea class="form-control" rows="3" placeholder="What can we do for you?"></textarea>
+                    </div>
+                  </div>
+                  <div class="row">
+                    <div class="col-sm-offset-4 col-sm-4">
+                      <button type="submit" value="send" class="btn btn-lg btn-block btn-primary btn-contact-form-submit" name="submit">
+                        <i class="fa fa-envelope"></i> Send Message
+                      </button>
+                    </div>
+                  </div>
+                </form>
+
+              </div>
+            </div>
+          </div>
+        </div>
+        <div class="big-icon-wrapper to-top-wrapper animated fadeIn wow" data-wow-delay=".2s">
+          <div class="down-button" data-scroll-target="header">
+            <i class="fa fa-3x fa-chevron-up"></i>
+          </div>
         </div>
       </div>
     </div> <!--END BLUE CONTENT-->

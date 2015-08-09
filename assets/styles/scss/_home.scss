@@ -122,6 +122,7 @@
   color:white;
   text-align: center;
   i {
+    border: 3px solid $blue;
     color: $blue;
     background-color: white;
     padding:20px;
@@ -166,12 +167,53 @@
 }
 
 .section-contact {
+  font-size: 16px;
+  .panel-contact {
+    margin-top: -40px;
+    padding-top: 50px;
+
+  }
+  .big-icon-wrapper {
+    z-index: 1000;
+  }
   .whitebox-line-bottom {
     &:before {
-      bottom: -60px;
-      height: 60px;
+      bottom: -80px;
+      height: 80px;
+      left: 49.7%;
     }
   }
+}
+
+.address-line {
+  display:block;
+  line-height: 1.8;
+}
+
+.row-address {
+  margin-bottom: 30px;
+
+  &:first-child {
+    margin-bottom: 15px;
+  }
+}
+
+.to-top-wrapper {
+  cursor:pointer;
+  top: 60px;
+  i {
+    vertical-align: middle;
+    transition: all .3s ease-out;
+    &:hover {
+        color:$white;
+        background-color: $gray-med;
+    }
+  }
+}
+
+.btn-contact-form-submit {
+  margin-top: 30px;
+  background-color:white;
 }
 
 .content-partners {
