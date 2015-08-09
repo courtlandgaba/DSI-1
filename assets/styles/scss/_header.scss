@@ -71,6 +71,14 @@
     a {
       display: block;
       text-decoration: none;
+      &:hover {
+        &:visited {
+          color: $blue;
+        }
+      }
+      &:visited{
+        color:$white;
+      }
     }
     i {
       position:absolute;
@@ -105,24 +113,6 @@
     left:49.5%;
     width: 3px;
     background-color: white;
-/*     transform: scaleY(0);
- */    transform-origin: top;
     transition: transform .3s ease-out;
-  }
-}
-.right-side {
-  position: absolute;
-  top: 0px;
-  right: 0px;
-  width: 50%;
-  height: 100%;
-}
-
-
-
-.content-blue {
-  .right-side {
-    background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
-    background-color: darken($blue, 2%);
   }
 }
