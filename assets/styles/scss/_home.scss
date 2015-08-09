@@ -174,7 +174,7 @@
 
   }
   .big-icon-wrapper {
-    z-index: 1000;
+    z-index: 10;
   }
   .whitebox-line-bottom {
     &:before {
@@ -214,6 +214,10 @@
 .btn-contact-form-submit {
   margin-top: 30px;
   background-color:white;
+  font-size: 1.6em;
+  i {
+    margin-right: 3px;
+  }
 }
 
 .content-partners {

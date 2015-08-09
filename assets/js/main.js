@@ -35,9 +35,18 @@ $(document).ready(function() {
   $('body').on('click', '[data-scroll-target]', function(e){
     e.preventDefault();
     var target = $(this).attr('data-scroll-target');
+    $('.nav-controls-right ul [data-scroll-target]').removeClass('active');
+    $('.nav-controls-right ul [data-scroll-target="'+target+'"]').addClass('active');
     $('html, body').animate({
       scrollTop: ($('#'+target).offset().top - 60
     )}, 800);
   });
+
+
+    $(window).on('scroll', function(e) {
+
+    });
+
+
 
 });
