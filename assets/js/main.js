@@ -5,12 +5,19 @@ $(document).ready(function() {
   var navbarOffset = $('#navbar-fixed').offset().top;
 
   // Use bootstrap's 'affix' plugin to pin the navbar
-  $('#navbar-fixed').affix({
+  $('#navbar-fixed-home').affix({
     offset: {
       top: navbarOffset - 30,
       bottom: 0
     }
   });
+
+  $('#navbar-fixed').affix({
+    offset: {
+      top: 0,
+      bottom: 0
+    }
+  })
 
   // WOW.js configuration
   var wow = new WOW(
