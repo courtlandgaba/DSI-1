@@ -8,16 +8,6 @@ body {
   background-color: $blue;
 }
 
-#background {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 100%;
-    background-color: $blue;
-    z-index: -1;
-}
-
 ul {
   padding: 0px;
   margin: 0px;
@@ -48,9 +38,10 @@ ul {
 }
 
 .content-blue {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
+  background: $blue url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
   padding-bottom: 20px;
   .right-side {
+    z-index:0;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
     background-color: darken($blue, 5%);
   }
@@ -164,8 +155,10 @@ ul {
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all .3s ease-out;
   }
   textarea {
+    resize: none;
     min-height: 80px;
     outline: none;
     display: block;
@@ -195,6 +188,7 @@ ul {
     font-size: 16px;
     line-height: 16px;
   }
+
 }
 
 .submit {
@@ -215,11 +209,31 @@ ul {
   border-radius: 3px;
 }
 
-.bg-right {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 50%;
-  height: 100%;
-  background: #EBEBEB;
+.btn-dsi {
+  text-transform: uppercase;
+  background-color: transparent;
+  border: 3px solid $blue;
+  border-radius: 6px;
+  color:$blue;
+  padding-top: 10px;
+  padding-bottom: 10px;
+  padding-right: 10px;
+  padding-left: 10px;
+  transition: all .3s ease-out;
+  box-shadow: 1px 1px 30px -10px $blue;
+  &:hover {
+    color: $white;
+    background-color:$blue;
+    box-shadow: 0 0 0 0 $blue;
+  }
+}
+
+.btn-dsi-lg {
+  padding-top: 20px;
+  padding-bottom: 20px;
+  font-size: 1.618em;
+  border-width: 5px;
+  i {
+    margin-right: 8px;
+  }
 }
