@@ -4,18 +4,20 @@
   "description": "Website for Geekin Radio. This package.json will run dev and builds.",
   "main": "index.html",
   "scripts": {
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "postinstall": "bower install",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "dev": "gulp dev"
   },
   "repository": {
     "type": "git",
-    "url": "git+https://github.com/brentoneill/geekin.git"
+    "url": "git+https://github.com/bocg/DSI.git"
   },
   "author": "Brent O'Neill and Courtland Gaba",
   "license": "ISC",
   "bugs": {
-    "url": "https://github.com/brentoneill/geekin/issues"
+    "url": "https://github.com/bocg/DSI/issues"
   },
-  "homepage": "https://github.com/brentoneill/geekin#readme",
+  "homepage": "https://github.com/bocg/DSI/#readme",
   "dependencies": {
     "gulp": "^3.9.0"
   },
