@@ -412,15 +412,52 @@ a {
 footer {
   background-color: #363f48;
   color: white;
-  padding-top: 40px;
+  padding-top: 60px;
   padding-bottom: 40px; }
+  footer a {
+    color: white;
+    position: relative;
+    text-transform: uppercase; }
+    footer a:hover {
+      color: white;
+      text-decoration: none; }
+      footer a:hover:after {
+        -webkit-transform: scaleX(1);
+            -ms-transform: scaleX(1);
+                transform: scaleX(1); }
+    footer a:after {
+      content: ' ';
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      height: 1px;
+      width: 100%;
+      -webkit-transform-origin: left;
+          -ms-transform-origin: left;
+              transform-origin: left;
+      -webkit-transform: scaleX(0);
+          -ms-transform: scaleX(0);
+              transform: scaleX(0);
+      background-color: white;
+      -webkit-transition: -webkit-transform 0.3s ease-out;
+              transition: transform 0.3s ease-out; }
+  footer h2 {
+    font-weight: 600;
+    text-transform: uppercase; }
+
+ul.footer-links i.fa-chevron-right {
+  color: #2B4592;
+  -webkit-transition: color 0.3s ease-out;
+          transition: color 0.3s ease-out; }
 
 ul.footer-links li {
   margin-bottom: 6px; }
+  ul.footer-links li:hover > i {
+    color: white; }
 
 ul.footer-links li > a {
   position: relative;
-  color: white; }
+  text-transform: uppercase; }
   ul.footer-links li > a:hover {
     color: white;
     text-decoration: none; }
@@ -448,16 +485,19 @@ ul.footer-links li > a {
 ul.footer-links:hover a {
   color: gray; }
 
+.row-footer {
+  margin-bottom: 30px; }
+
 .subfooter {
   height: 69px;
   background-color: #252C33;
   color: #575d63;
-  padding: 30px 0 30px 0; }
+  padding-top: 28px; }
   .subfooter p {
     margin: 0;
-    font-size: 14px; }
+    font-size: 13px; }
   .subfooter a {
-    color: #2B4592; }
+    color: #314ea6; }
 
 html {
   overflow-x: hidden;
@@ -579,6 +619,7 @@ img {
   left: 19%;
   height: 3px;
   width: 62%;
+  border-radius: 20px;
   background-color: white; }
 
 .section-advantages {
