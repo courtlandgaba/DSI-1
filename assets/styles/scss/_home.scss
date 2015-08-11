@@ -136,6 +136,7 @@
   left: 19%;
   height: 3px;
   width: 62%;
+  border-radius: 20px;
   background-color: white;
 }
 
@@ -287,6 +288,7 @@
   min-height: 400px;
   background-size: contain;
   background-position: center;
+  background-attachment: fixed;
   .down-button-wrapper {
     bottom: 20px;
   }
