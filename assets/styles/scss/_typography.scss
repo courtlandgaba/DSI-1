@@ -5,6 +5,14 @@ body {
   font-size: 15px;
 }
 
+p {
+  line-height: 1.8;
+}
+
+a {
+  transition: all .3s ease-out;
+}
+
 .title {
   text-transform:uppercase;
   font-weight:700;
@@ -24,9 +32,6 @@ body {
   font-weight: 700;
 }
 
-p {
-  line-height: 1.8;
-}
 
 /* page title */
 .pageTitle {
