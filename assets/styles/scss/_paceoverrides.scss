@@ -1,0 +1,14 @@
+.pace .pace-activity:before,
+.pace .pace-activity {
+  border-color: $blue transparent transparent;
+
+}
+.pace .pace-activity {
+  height: 180px;
+  width: 180px;
+}
+
+.pace .pace-activity:before {
+  height: 100px;
+  width: 100px;
+}
