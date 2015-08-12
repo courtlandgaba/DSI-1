@@ -40,7 +40,8 @@ a {
   background-color: #2B4592;
   background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
 }
-.heading {
+
+.page-heading {
   display: block;
   text-transform: uppercase;
   letter-spacing: 8px;
@@ -48,4 +49,5 @@ a {
   line-height: 50px;
   font-weight: 700;
   color: #FFF;
+  margin-top: 30px;
 }
