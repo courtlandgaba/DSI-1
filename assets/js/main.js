@@ -2,12 +2,12 @@ $(document).ready(function() {
   'use strict';
 
   // Get navbar offset from top window to calculate when to affix the navbar to the top
-  var navbarOffset = $('#navbar-fixed').offset().top;
+  var navbarOffsetHome = $('#navbar-fixed-home').offset().top;
 
   // Use bootstrap's 'affix' plugin to pin the navbar
   $('#navbar-fixed-home').affix({
     offset: {
-      top: navbarOffset - 30,
+      top: navbarOffsetHome - 30,
       bottom: 0
     }
   });
