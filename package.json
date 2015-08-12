@@ -1,7 +1,7 @@
 {
   "name": "geekin",
   "version": "1.0.0",
-  "description": "Website for Geekin Radio. This package.json will run dev and builds.",
+  "description": "Website for Document Solutions, Inc.. This package.json will run dev and builds.",
   "main": "index.html",
   "scripts": {
     "postinstall": "bower install",
