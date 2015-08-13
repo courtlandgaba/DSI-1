@@ -6,14 +6,14 @@ ul.supply-nav {
     float: left;
     display: block;
     padding: 3px 15px;
-    border-right-color: #363f48;
+    border-right-color:  $gray-med;
     border-right-width: 1px;
     border-right-style: solid;
     margin-bottom: 5px;
     font-size: 16px;
     line-height: 24px;
     a {
-      color: #363f48;
+      color:  $gray-med;
       font-weight: 700;
     }
   }
@@ -67,7 +67,7 @@ form {
     margin-bottom: 40px;
     padding: 12px 10px;
     font-size: 16px;
-    color: #363f48;
+    color:  $gray-med;
     border: 1px solid #BBB;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -83,7 +83,7 @@ form {
     margin-bottom: 40px;
     padding: 12px 10px;
     font-size: 16px;
-    color: #363f48;
+    color:  $gray-med;
     border: 1px solid #BBB;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;

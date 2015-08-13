@@ -1,5 +1,6 @@
 footer {
-  background-color: #363f48;
+  border-top: 1px solid darken( $gray-med, 5%);
+  background-color:  $gray-med;
   color: $white;
   padding-top: 60px;
   padding-bottom: 40px;
@@ -78,15 +79,29 @@ ul.footer-links {
 }
 
 .subfooter {
-  height: 69px;
   background-color: $gray-dark;
   color: #575d63;
-  padding-top: 28px;
+  padding-top: 25px;
+  padding-bottom: 20px;
   p {
     margin: 0;
     font-size: 13px;
   }
   a {
     color: lighten($blue, 5%);
+  }
+}
+
+.footer-logo-wrapper {
+  top: 40px;
+  text-align: center;
+  width: 100%;
+  img {
+    -webkit-box-shadow: 0px 2px 54px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 54px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 54px -10px rgba(0,0,0,0.75);
+    max-width: 200px;
+    display: inline-block;
+    margin: 0 auto;
   }
 }

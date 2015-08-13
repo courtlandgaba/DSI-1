@@ -2,22 +2,15 @@ $(document).ready(function() {
   'use strict';
 
   // Get navbar offset from top window to calculate when to affix the navbar to the top
-  var navbarOffsetHome = $('#navbar-fixed-home').offset().top;
-
-  // Use bootstrap's 'affix' plugin to pin the navbar
-  $('#navbar-fixed-home').affix({
-    offset: {
-      top: navbarOffsetHome - 30,
-      bottom: 0
-    }
-  });
-
-  $('#navbar-fixed').affix({
-    offset: {
-      top: 0,
-      bottom: 0
-    }
-  })
+  if ( $('body').attr('data-page') === 'home' ) {
+    var navbarOffsetHome = $('#navbar-fixed-home').offset().top;
+    $('#navbar-fixed-home').affix({
+      offset: {
+        top: navbarOffsetHome - 30,
+        bottom: 0
+      }
+    });
+  }
 
   // WOW.js configuration
   var wow = new WOW(
@@ -50,11 +43,10 @@ $(document).ready(function() {
     )}, 800);
   });
 
-
-    $(window).on('scroll', function(e) {
-
-    });
-
+  // Set up PACE options
+  Pace.on("done", function(){
+      $(".cover").fadeOut(2000);
+  });
 
 
 });
