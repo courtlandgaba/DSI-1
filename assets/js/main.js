@@ -33,37 +33,33 @@ $(document).ready(function() {
   $('body').on('click', '[data-scroll-target]', function(e){
     e.preventDefault();
     var target = $(this).attr('data-scroll-target');
-    $('.nav-controls-right ul [data-scroll-target]').removeClass('active');
-    $('.nav-controls-right ul [data-scroll-target="'+target+'"]').addClass('active');
     $('html, body').animate({
       scrollTop: ($('#'+target).offset().top - 60
     )}, 800);
   });
 
   // Set up PACE options
-  Pace.on("done", function(){
-      $(".cover").fadeOut(2000);
+  Pace.on('done', function(){
+      $('.cover').fadeOut(2000);
   });
 
-  //
-  // // Set up nav controls on right to detect scroll position
-  // $(window).scroll(function(e){
-  //   var scrollPos = $(document).scrollTop() + 26;
-  //   $('.nav-controls-right li').each(function () {
-  //       var currLink = $(this);
-  //
-  //       var targetElement = $('#' + currLink.attr('data-scroll-target'));
-  //       console.log(targetElement);
-  //
-  //       if (targetElement.position().top <= scrollPos && targetElement.position().top + targetElement.height() > scrollPos) {
-  //           $('.nav-controls-right li').removeClass("active");
-  //           currLink.addClass("active");
-  //       }
-  //       else{
-  //           currLink.removeClass("active");
-  //       }
-  //   });
-  // }); // End window scroll event
+  $('.nav-controls-right li:first-child').addClass('active');
+
+  // Set up nav controls on right to detect scroll position
+  $(window).scroll(function(e){
+    var scrollPos = $(document).scrollTop() + 26;
+
+    $('.nav-controls-right li').each(function () {
+        var currLink = $(this);
+        var targetElement = $('#' + currLink.attr('data-scroll-target'));
+        if ( targetElement.offset().top <= scrollPos && targetElement.offset().top + targetElement.height() > scrollPos ) {
+            $('.nav-controls-right li').removeClass("active");
+            currLink.addClass("active");
+        } else {
+            currLink.removeClass("active");
+        }
+    });
+  }); // End window scroll event
 
 
 
