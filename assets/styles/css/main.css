@@ -818,7 +818,6 @@ form {
     outline: none;
     display: block;
     width: 100%;
-    margin-bottom: 40px;
     padding: 12px 10px;
     font-size: 16px;
     color: #363f48;
@@ -850,6 +849,12 @@ form {
   width: 100px; }
 
 @media screen and (max-width: 876px) {
+  body {
+    font-size: 13px; }
+  .section-contact {
+    font-size: 14px; }
+  #navbar-fixed-home.affix {
+    top: 23px; }
   .horizontal-white-line {
     display: none; }
   .col-advantage {
@@ -857,7 +862,45 @@ form {
     margin: 0 auto;
     margin-top: 60px; }
     .col-advantage:first-child {
-      margin-top: 40px; } }
+      margin-top: 40px; }
+  .solutions-list h4 {
+    text-align: center; }
+  .solutions-list ul {
+    margin-left: 10%; } }
+
+.display-590 {
+  display: none; }
+
+@media screen and (max-width: 590px) {
+  .panel-dsihome {
+    padding: 20px; }
+  .container {
+    width: 88%; }
+  .splash h1 {
+    letter-spacing: 4px; }
+  .splash img {
+    margin-top: 60px; }
+  .nav-controls-right {
+    display: none; }
+  .display-590 {
+    display: block; }
+  .hidden-590 {
+    display: none; }
+  .row-address {
+    margin-bottom: 0; }
+    .row-address .col-xs-6 {
+      width: 100%;
+      display: block;
+      float: none;
+      margin-bottom: 20px; } }
+
+.form-control:focus {
+  border-color: #2B4592;
+  outline: 0;
+  box-shadow: inset 0 1px 1px rgba(0, 0, 0, 0.075), 0 0 8px rgba(43, 69, 146, 0.6); }
+
+.form-control {
+  font-size: 16px; }
 
 .btn-dsi {
   text-transform: uppercase;
