@@ -86,12 +86,14 @@ ul {
   background: #FFF;
 }
 .page-body {
+  padding-top: 80px;
+  padding-bottom: 120px;
   position: relative;
   background: #FFF;
+  border-bottom: thin solid $blue;
   p {
     margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.6;
     color:  $gray-med;
   }
   h1 {
@@ -140,7 +142,6 @@ ul {
 .sidebar-module {
   margin-bottom: 40px;
   form input[type="text"]{
-    outline: none;
     display: block;
     width: 100%;
     margin-bottom: 18px;
@@ -160,7 +161,6 @@ ul {
   textarea {
     resize: none;
     min-height: 80px;
-    outline: none;
     display: block;
     width: 100%;
     margin-bottom: 18px;

@@ -1,8 +1,9 @@
 $(document).ready(function() {
   'use strict';
 
-  // Get navbar offset from top window to calculate when to affix the navbar to the top
+  // HOME PAGE SPECIFIC ITEMS
   if ( $('body').attr('data-page') === 'home' ) {
+    // Get navbar offset from top window to calculate when to affix the navbar to the top
     var navbarOffsetHome = $('#navbar-fixed-home').offset().top;
     $('#navbar-fixed-home').affix({
       offset: {
@@ -10,6 +11,11 @@ $(document).ready(function() {
         bottom: 0
       }
     });
+    // Set up PACE options
+    Pace.on('done', function(){
+        $('.cover').fadeOut(2000);
+    });
+
   }
 
   // WOW.js configuration
@@ -18,7 +24,7 @@ $(document).ready(function() {
       boxClass:     'wow',      // animated element css class (default is wow)
       animateClass: 'animated', // animation css class (default is animated)
       offset:       0,          // distance to the element when triggering the animation (default is 0)
-      mobile:       true,       // trigger animations on mobile devices (default is true)
+      mobile:       false,       // trigger animations on mobile devices (default is true)
       live:         true        // act on asynchronously loaded content (default is true)
 
     }
@@ -27,9 +33,8 @@ $(document).ready(function() {
   // Initialize wow.js for animations on scrolls
   wow.init();
 
-  // Initialize bootstrap tooltips
-  $('[data-toggle="tooltip"]').tooltip();
 
+  // Handles scroll on home page
   $('body').on('click', '[data-scroll-target]', function(e){
     e.preventDefault();
     var target = $(this).attr('data-scroll-target');
@@ -38,17 +43,13 @@ $(document).ready(function() {
     )}, 800);
   });
 
-  // Set up PACE options
-  Pace.on('done', function(){
-      $('.cover').fadeOut(2000);
-  });
-
+  // Sets the top nav button to active
   $('.nav-controls-right li:first-child').addClass('active');
 
   // Set up nav controls on right to detect scroll position
   $(window).scroll(function(e){
     var scrollPos = $(document).scrollTop() + 26;
-
+    // Handles the 'spy' functionality of right side dot nav
     $('.nav-controls-right li').each(function () {
         var currLink = $(this);
         var targetElement = $('#' + currLink.attr('data-scroll-target'));
