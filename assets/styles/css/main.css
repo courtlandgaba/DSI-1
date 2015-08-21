@@ -3,7 +3,8 @@
   background: #2B4592 url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==); }
 
 body {
-  position: relative; }
+  position: relative;
+  font-size: 16px; }
 
 .cover {
   position: fixed;
@@ -19,6 +20,9 @@ body {
 
 .pan {
   padding: 0px; }
+
+.col-text {
+  padding-right: 40px; }
 
 * {
   list-style-type: none; }
@@ -95,8 +99,7 @@ ul {
   border-bottom: thin solid #2B4592; }
   .page-body p {
     margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.6;
     color: #363f48; }
   .page-body h1 {
     margin-bottom: 32px;
@@ -138,7 +141,6 @@ ul {
 .sidebar-module {
   margin-bottom: 40px; }
   .sidebar-module form input[type="text"] {
-    outline: none;
     display: block;
     width: 100%;
     margin-bottom: 18px;
@@ -154,7 +156,6 @@ ul {
   .sidebar-module textarea {
     resize: none;
     min-height: 80px;
-    outline: none;
     display: block;
     width: 100%;
     margin-bottom: 18px;
@@ -308,32 +309,6 @@ a {
       display: inline-block; }
   .header-btn-wrapper .down-button-wrapper {
     bottom: -26px; }
-
-.btn-arrow-down {
-  position: relative;
-  border: 2px solid white;
-  border-radius: 3px;
-  padding: 14px;
-  color: white;
-  -webkit-transition: all 0.3s ease-out;
-          transition: all 0.3s ease-out; }
-  .btn-arrow-down:hover {
-    color: #2B4592;
-    background-color: white; }
-    .btn-arrow-down:hover:after {
-      -webkit-transform: scaleY(1);
-          -ms-transform: scaleY(1);
-              transform: scaleY(1); }
-  .btn-arrow-down:after {
-    content: " ";
-    position: absolute;
-    height: 120px;
-    bottom: -120px;
-    left: 49.5%;
-    width: 3px;
-    background-color: white;
-    -webkit-transition: -webkit-transform 0.3s ease-out;
-            transition: transform 0.3s ease-out; }
 
 .nav-controls-right {
   position: fixed;
@@ -855,7 +830,7 @@ form {
     form label span {
       color: #ff0000; }
   form input[type="text"] {
-    outline: none;
+    outline-color: #2B4592;
     display: block;
     width: 100%;
     padding: 12px 10px;
@@ -865,7 +840,7 @@ form {
     border-radius: 3px;
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3); }
   form textarea {
-    outline: none;
+    outline-color: #2B4592;
     display: block;
     width: 100%;
     margin-bottom: 40px;
@@ -944,7 +919,7 @@ form {
 
 .btn-dsi {
   text-transform: uppercase;
-  background-color: transparent;
+  background-color: white;
   border: 3px solid #2B4592;
   border-radius: 6px;
   color: #2B4592;
@@ -967,5 +942,31 @@ form {
   border-width: 5px; }
   .btn-dsi-lg i {
     margin-right: 8px; }
+
+.btn-arrow-down {
+  position: relative;
+  border: 2px solid white;
+  border-radius: 3px;
+  padding: 14px;
+  color: white;
+  -webkit-transition: all 0.3s ease-out;
+          transition: all 0.3s ease-out; }
+  .btn-arrow-down:hover {
+    color: #2B4592;
+    background-color: white; }
+    .btn-arrow-down:hover:after {
+      -webkit-transform: scaleY(1);
+          -ms-transform: scaleY(1);
+              transform: scaleY(1); }
+  .btn-arrow-down:after {
+    content: " ";
+    position: absolute;
+    height: 120px;
+    bottom: -120px;
+    left: 49.5%;
+    width: 3px;
+    background-color: white;
+    -webkit-transition: -webkit-transform 0.3s ease-out;
+            transition: transform 0.3s ease-out; }
 
 /*# sourceMappingURL=/main.css.map */
