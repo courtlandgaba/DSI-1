@@ -81,11 +81,17 @@
   }
 }
 
-#navbar-fixed.affix {
+#navbar-fixed-home.affix {
     position: fixed;
     top: 25px;
     width: 100%;
     margin-bottom:26px;
+}
+
+#navbar-fixed {
+    position: fixed;
+    top: 0px;
+    width: 100%;
 }
 
 .navbar-default .navbar-nav > li > a {

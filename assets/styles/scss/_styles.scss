@@ -8,16 +8,6 @@ body {
   background-color: $blue;
 }
 
-#background {
-    position: fixed;
-    top: 0px;
-    left: 0px;
-    width: 50%;
-    height: 100%;
-    background-color: $blue;
-    z-index: -1;
-}
-
 ul {
   padding: 0px;
   margin: 0px;
@@ -48,9 +38,10 @@ ul {
 }
 
 .content-blue {
-  background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
+  background: $blue url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
   padding-bottom: 20px;
   .right-side {
+    z-index:0;
     background: url(data:image/png;base64,iVBORw0KGgoAAAANSUhEUgAAAAYAAAAGCAYAAADgzO9IAAAAJUlEQVQIW2NkYGCQBGIQeA6lwRQjPglkhXA2SAcygBtLtARcNwBN0gQHoVU8VwAAAABJRU5ErkJggg==);
     background-color: darken($blue, 5%);
   }
@@ -73,12 +64,47 @@ ul {
   z-index:-1;
 }
 
-
-.content-blue {
-
+ul.product-items {
+  list-style-type: none;
+  margin: 70px 0px 0px !important;
+  padding: 0px !important;
+  height: 100%;
+  li {
+    margin-bottom: 30px !important;
+    padding-bottom: 30px;
+    border-bottom: 3px solid #EEE;
+    .image {
+      height: 220px;
+      background-position: center center;
+      background-repeat: no-repeat;
+      -webkit-background-size: contain;
+      -moz-background-size: contain;
+      background-size: contain;
+    }
+    .third {
+      float: left;
+      width: 30.6666%;
+      min-height: 200px;
+      margin-right: 4%;
+    }
+    .third.last {
+      margin-right: 0px;
+    }
+  }
 }
-
-
+.description {
+  h3 {
+    text-transform: none;
+  }
+  ul {
+    list-style-type: disc !important;
+    li {
+      margin: 0px !important;
+      padding: 0px;
+      border-bottom: none;
+    }
+  }
+}
 .table-cell {
   display: table-cell;
   height: 122px;
@@ -94,6 +120,27 @@ ul {
   padding: 44px 30px 100px;
   background: #FFF;
 }
+.whole {
+  position: relative;
+  float: left;
+  width: 100%;
+  min-height: 500px;
+  padding: 44px 30px 100px;
+  background: #FFF;
+  .contact-large-link {
+    display: block;
+    float: left;
+    font-style: italic;
+    font-size: 26px;
+    line-height: 26px;
+    color: $blue;
+  }
+  i {
+    color: $blue;
+    font-size: 26px;
+    margin-left: 6px;
+  }
+}
 .page-body {
   position: relative;
   background: #FFF;
@@ -101,7 +148,7 @@ ul {
     margin-bottom: 35px;
     font-size: 16px;
     line-height: 24px;
-    color: #363f48;
+    color:  $gray-med;
   }
   h1 {
     margin-bottom: 32px;
@@ -109,7 +156,7 @@ ul {
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
-    color: #363f48;
+    color:  $gray-med;
   }
   h2 {
     margin-bottom: 32px;
@@ -117,7 +164,7 @@ ul {
     font-size: 30px;
     line-height: 30px;
     font-weight: 700;
-    color: #363f48;
+    color:  $gray-med;
   }
   h3 {
     margin-bottom: 18px;
@@ -133,7 +180,7 @@ ul {
       margin-bottom: 5px;
       font-size: 16px;
       line-height: 24px;
-      color: #363f48;
+      color:  $gray-med;
     }
   }
 }
@@ -156,7 +203,7 @@ ul {
     padding: 13px 10px;
     font-size: 14px;
     line-height: 14px;
-    color: #363f48;
+    color:  $gray-med;
     border: 1px solid #AAA;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -164,8 +211,10 @@ ul {
     -webkit-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
     -moz-box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
     box-shadow: inset 0px 1px 1px rgba(0, 0, 0, 0.3);
+    transition: all .3s ease-out;
   }
   textarea {
+    resize: none;
     min-height: 80px;
     outline: none;
     display: block;
@@ -174,7 +223,7 @@ ul {
     padding: 13px 10px;
     font-size: 14px;
     line-height: 14px;
-    color: #363f48;
+    color:  $gray-med;
     border: 1px solid #AAA;
     -webkit-border-radius: 3px;
     -moz-border-radius: 3px;
@@ -195,6 +244,7 @@ ul {
     font-size: 16px;
     line-height: 16px;
   }
+
 }
 
 .submit {
@@ -206,20 +256,11 @@ ul {
   font-family: 'Open Sans', sans-serif;
   font-size: 18px;
   line-height: 18px;
-  color: #363f48;
-  border-color: #363f48;
+  color:  $gray-med;
+  border-color:  $gray-med;
   border-width: 2px;
   border-style: solid;
   -webkit-border-radius: 3px;
   -moz-border-radius: 3px;
   border-radius: 3px;
-}
-
-.bg-right {
-  position: absolute;
-  right: 0px;
-  top: 0px;
-  width: 50%;
-  height: 100%;
-  background: #EBEBEB;
 }

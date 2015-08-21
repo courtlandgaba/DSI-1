@@ -1,21 +1,107 @@
 footer {
-  background-color: #363f48;
-  color: #5e666d;
+  border-top: 1px solid darken( $gray-med, 5%);
+  background-color:  $gray-med;
+  color: $white;
+  padding-top: 60px;
+  padding-bottom: 40px;
   a {
-    color: #5e666d;
+    color: $white;
+    position: relative;
+    text-transform: uppercase;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+    &:after {
+      content: ' ';
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      height: 1px;
+      width: 100%;
+      transform-origin: left;
+      transform: scaleX(0);
+      background-color: $white;
+      transition: transform .3s ease-out;
+    }
+  }
+  h2 {
+    font-weight: 600;
+    text-transform: uppercase;
   }
 }
 
+ul.footer-links {
+  i.fa-chevron-right {
+    color: $blue;
+    transition: color .3s ease-out;
+  }
+  li {
+    margin-bottom: 6px;
+    &:hover > i {
+      color:$white;
+    }
+  }
+  li > a {
+    position: relative;
+    text-transform: uppercase;
+    &:hover {
+      color: $white;
+      text-decoration: none;
+      &:after {
+        transform: scaleX(1);
+      }
+    }
+    &:after {
+      content: ' ';
+      position: absolute;
+      bottom: -1px;
+      left: 0px;
+      height: 1px;
+      width: 100%;
+      transform-origin: left;
+      transform: scaleX(0);
+      background-color: $white;
+      transition: transform .3s ease-out;
+    }
+  }
+  &:hover a {
+    color: darken($white, 50%);
+  }
+
+}
+
+.row-footer {
+  margin-bottom: 30px;
+}
+
 .subfooter {
-  height: 69px;
   background-color: $gray-dark;
   color: #575d63;
-  padding: 30px 0 30px 0;
+  padding-top: 25px;
+  padding-bottom: 20px;
   p {
     margin: 0;
-    font-size: 14px;
+    font-size: 13px;
   }
   a {
-    color: $blue;
+    color: lighten($blue, 5%);
+  }
+}
+
+.footer-logo-wrapper {
+  top: 40px;
+  text-align: center;
+  width: 100%;
+  img {
+    -webkit-box-shadow: 0px 2px 54px -10px rgba(0,0,0,0.75);
+    -moz-box-shadow: 0px 2px 54px -10px rgba(0,0,0,0.75);
+    box-shadow: 0px 2px 54px -10px rgba(0,0,0,0.75);
+    max-width: 200px;
+    display: inline-block;
+    margin: 0 auto;
   }
 }
