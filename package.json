@@ -1,5 +1,5 @@
 {
-  "name": "geekin",
+  "name": "DSI",
   "version": "1.0.0",
   "description": "Website for Document Solutions, Inc.. This package.json will run dev and builds.",
   "main": "index.html",
