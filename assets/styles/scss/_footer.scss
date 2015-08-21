@@ -34,6 +34,7 @@ footer {
     text-transform: uppercase;
     position:relative;
     margin-bottom: 20px;
+    white-space: nowrap;
     &:after {
       content: ' ';
       position: absolute;
