@@ -91,7 +91,8 @@ ul.product-items {
       height: 220px;
       background-position: center center;
       background-repeat: no-repeat;
-      background-size: contain; }
+      background-size: contain;
+      width: auto; }
     ul.product-items li .third {
       float: left;
       width: 30.6666%;
