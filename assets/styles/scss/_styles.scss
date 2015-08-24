@@ -68,7 +68,9 @@ ul.product-items {
   list-style-type: none;
   margin: 70px 0px 0px !important;
   padding: 0px !important;
-  height: 100%;
+  h3 {
+    font-weight: 700;
+  }
   li {
     margin-bottom: 30px !important;
     padding-bottom: 30px;
@@ -102,6 +104,7 @@ ul.product-items {
       margin: 0px !important;
       padding: 0px;
       border-bottom: none;
+      list-style: initial;
     }
   }
 }
@@ -142,12 +145,14 @@ ul.product-items {
   }
 }
 .page-body {
+  padding-top: 80px;
+  padding-bottom: 120px;
   position: relative;
   background: #FFF;
+  border-bottom: thin solid $blue;
   p {
     margin-bottom: 35px;
-    font-size: 16px;
-    line-height: 24px;
+    line-height: 1.6;
     color:  $gray-med;
   }
   h1 {
@@ -196,7 +201,6 @@ ul.product-items {
 .sidebar-module {
   margin-bottom: 40px;
   form input[type="text"]{
-    outline: none;
     display: block;
     width: 100%;
     margin-bottom: 18px;
@@ -216,7 +220,6 @@ ul.product-items {
   textarea {
     resize: none;
     min-height: 80px;
-    outline: none;
     display: block;
     width: 100%;
     margin-bottom: 18px;

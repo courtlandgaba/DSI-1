@@ -90,29 +90,3 @@
     bottom: -26px;
   }
 }
-
-.btn-arrow-down {
-  position: relative;
-  border: 2px solid white;
-  border-radius: 3px;
-  padding: 14px;
-  color:$white;
-  transition: all .3s ease-out;
-  &:hover {
-    color: $blue;
-    background-color:$white;
-    &:after {
-      transform: scaleY(1);
-    }
-  }
-  &:after {
-    content: " ";
-    position: absolute;
-    height:120px;
-    bottom:-120px;
-    left:49.5%;
-    width: 3px;
-    background-color: white;
-    transition: transform .3s ease-out;
-  }
-}
