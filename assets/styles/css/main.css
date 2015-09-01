@@ -307,7 +307,8 @@ a {
   width: 100%;
   height: auto;
   background-color: #2B4592;
-  z-index: 100; }
+  z-index: 100;
+  font-weight: bold; }
   .banner-contact a {
     text-decoration: underline;
     color: white; }
