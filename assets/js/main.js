@@ -62,12 +62,5 @@ $(document).ready(function() {
   }); // End window scroll event
 
 
-  $('body').on('mouseenter', '#navbar li a', function(e){
-
-  });
-
-  $('body').on('mouseleave', '#navbar li a', function(e){
-  });
-
 
 });

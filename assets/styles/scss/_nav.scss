@@ -55,7 +55,9 @@
     }
   }
   .dropdown-menu > li > a {
-    transition: all .3 ease-out;
+    text-transform: uppercase;
+    font-weight: bold;
+    transition: all .3s ease-out;
     &:hover {
       color: $blue;
     }
@@ -126,4 +128,8 @@
 
 .nav-collapse-buttons {
   float: right;
+}
+
+.dropdown-menu > li > a {
+  transition: all .3s ease-out;
 }
