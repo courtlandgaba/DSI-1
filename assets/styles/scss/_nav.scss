@@ -107,3 +107,14 @@
   background-color: darken(#fff, 10%);
   color: $blue;
 }
+
+.phone-button-wrapper {
+  display:none;
+  color:$blue;
+  margin-top: 8px;
+  margin-right: 18px;
+}
+
+.nav-collapse-buttons {
+  float: right;
+}
