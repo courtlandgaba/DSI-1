@@ -30,7 +30,10 @@
   .phone-button-wrapper {
     display: inline-block;
   }
-};
+  .navbar-default .navbar-nav .open .dropdown-menu > li > a:hover {
+    color: $blue;
+  }
+}
 
 .display-590 {
   display:none;
@@ -73,5 +76,4 @@
       margin-bottom: 20px;
     }
   }
-
 }
