@@ -124,26 +124,19 @@ ul.product-items {
   padding: 44px 30px 100px;
   background: #FFF;
 }
-.whole {
-  position: relative;
+.contact-large-link {
+  display: block;
   float: left;
-  width: 100%;
-  min-height: 500px;
-  padding: 44px 30px 100px;
-  background: #FFF;
-  .contact-large-link {
-    display: block;
-    float: left;
-    font-style: italic;
-    font-size: 26px;
-    line-height: 26px;
-    color: $blue;
-  }
-  i {
-    color: $blue;
-    font-size: 26px;
-    margin-left: 6px;
-  }
+  font-style: italic;
+  font-size: 26px;
+  line-height: 26px;
+  color: $blue;
+}
+.fa-arrow-right {
+  color: $blue;
+  margin-left: 10px;
+  font-size: 24px !important;
+  margin-top: 1px;
 }
 .page-body {
   padding-top: 80px;
