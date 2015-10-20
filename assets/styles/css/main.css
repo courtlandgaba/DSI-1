@@ -716,9 +716,9 @@ img {
 .horizontal-white-line {
   position: absolute;
   top: 50%;
-  left: 19%;
+  left: 19.2%;
   height: 3px;
-  width: 62%;
+  width: 61.6%;
   border-radius: 20px;
   background-color: white; }
 
